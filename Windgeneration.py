@@ -8,7 +8,6 @@ import os
 # =========================================================================
 # USER SETTINGS
 # =========================================================================
-# Pas hier de bestandsnamen aan indien nodig
 NASA_CSV_FILE = 'Windspeed_direction.csv'
 # Let op: als je het originele Excel bestand hebt, gebruik dan pd.read_excel in de code hieronder.
 # Hier gaan we uit van de CSV versie zoals geüpload.
@@ -633,6 +632,7 @@ df_results.to_csv(output_csv, index=False, sep=';', decimal=',')
 print(f"  Bestand succesvol aangemaakt: {output_csv}")
 print(f"  Je kunt dit bestand direct openen in Excel.")
 print('='*55)
+
 
 
 plt.show()
